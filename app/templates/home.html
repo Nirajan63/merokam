@@ -1,8 +1,19 @@
-{% extends "base.html" %}
-
-{% block title %}Hero Page{% endblock %}
-
-{% block content %}
-    <h1>Hello Hero</h1>
-    <p>This is the hero page content.</p>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Use url_for so Flask generates the correct static path -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a href="/login" class="login">Login</a>
+      <a href="/register" class="register">Register</a>
+      <a href="/contact_us" class="contact_us">Contact Us</a>
+    </div>
+  </header>
+</body>
+</html>

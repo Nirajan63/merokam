@@ -1,0 +1,22 @@
+.nav {
+  background-color: grey;
+  height: 500px;
+  width: 700px;
+  display: flex;              /* Needed for justify-content & align-items */
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.nav a:hover {
+  background-color: #0056b3;
+}
